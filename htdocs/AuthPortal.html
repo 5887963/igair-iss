@@ -1,8 +1,9 @@
-<!-- Landing Page -->
+﻿<!-- Landing Page -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>ISS Auth Portal</title>
+	<script src="snap/dist/snap.svg-min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500|Electrolize' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="mobiStyle-master/css/grid.css" />
 	<link rel="stylesheet" href="mobiStyle-master/css/mobi.css" />
@@ -34,7 +35,7 @@
 				You MUST have an account on enjin and be signed up on the <a href="http://www.intergalacticairlines.com">IGAIR</a> webpage to log in.</p>
 					<div class="container">
 						<div class="third">
-							<button class="mg-action" style="width: 172px;" id="goAuthenticate">Authenticate!</button>
+							<button class="mg-svg-button mg-action" style="width: 172px;" id="goAuthenticate">"Authenticate!"</button>
 						</div>
 					</div>
 					<div class="container" id="enjinLoginWarn">
@@ -42,7 +43,7 @@
 							<p>Please ensure you are logged into Enjin when Authenticating!</p>
 						</div>
 						<div class="third">
-							<a href="http://www.intergalacticairlines.com"><button class="mg-action" style="width: 172px;" id="goBack">Back to IGAIR</button></a>
+							<a href="http://www.intergalacticairlines.com"><button class="mg-svg-button mg-nav" style="width: 172px;" id="goBack">Back to IGAIR</button></a>
 						</div>
 					</div>
 				</div>
@@ -65,10 +66,10 @@
 			</div>
 		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-	<script src="scripts/min/jquery.mobiStyle-min.js"></script>
+	<script src="Snap/dist/snap.svg-min.js"></script>
+	<script src="mobiStyle-master/scripts/min/jquery.mobiStyle-min.js"></script>
 	<script>
 		$(document).mobiStyle();
-	</script>	
+	</script>
 </body>
 </html>
