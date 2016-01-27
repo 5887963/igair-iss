@@ -34,15 +34,15 @@
 				You MUST have an account on enjin and be signed up on <a href="http://www.intergalacticairlines.com">IGAIR's</a> webpage to log in.</p>
 					<div class="container">
 						<div class="third">
-							<button class="mg-action" style="width: 172px;">Authenticate!</button>
+							<button class="mg-action" style="width: 172px;" id="goAuthenticate">Authenticate!</button>
 						</div>
 					</div>
-					<div class="container">
+					<div class="container" id="enjinLoginWarn">
 						<div class="mg-message small warning">
 							<p>Please ensure you are logged into Enjin when Authenticating!</p>
 						</div>
 						<div class="third">
-							<button class="mg-action" style="width: 172px;">Back to IGAIR</button>
+							<button class="mg-action" style="width: 172px;" id="goBack">Back to IGAIR</button>
 						</div>
 					</div>
 				</div>
@@ -53,7 +53,7 @@
 				Thank you all.
 				</small>
 			</div>
-			<div class="mg-sidebar">
+			<div class="mg-sidebar" id="sidebarNews">
 				<div class="mg-panel">
 					<h3>Star Citizen News</h3>
 					<p><small>Fresh off <a href="http://www.robertsspaceindustries.com/feed/">the spectrum!</a></small></p>
