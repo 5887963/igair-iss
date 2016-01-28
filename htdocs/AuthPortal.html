@@ -29,10 +29,15 @@
 						<h1>Intergalactic Staffing Solutions</h1>
 					</div>
 					<h2>Authentication Portal</h2>
-				<p>Welcome to the IGAIR Intergalactic Staffing Solutions Authentication Portal!
-				(Whew! That was a mouthful!) Please click the <b>Authenticate!</b> button below to login!
-				<h3>Note:</h3>
-				You MUST have an account on enjin and be signed up on the <a href="http://www.intergalacticairlines.com">IGAIR</a> webpage to log in.</p>
+					<p>Welcome to the IGAIR Intergalactic Staffing Solutions Authentication Portal!
+					(Whew! That was a mouthful!) Please click the <b>Authenticate!</b> button below to login!
+					<!-- Error Message Display: Bad Login -->
+					<div class="mg-message small error" id="err_badLogin" hidden>
+						<h3>Login Failed!</h3>
+						<p>You were unable to authenticate because something went wrong. Please check to ensure you are logged into <a href="http://www.intergalacticairlines.com">IGAIR's</a>Enjin site!</p>
+					</div>
+					<h3>Note:</h3>
+					You MUST have an account on enjin and be signed up on the <a href="http://www.intergalacticairlines.com">IGAIR</a> webpage to log in.</p>
 					<div class="container">
 						<div class="third">
 							<button class="mg-svg-button mg-action" style="width: 172px;" id="goAuthenticate">"Authenticate!"</button>
