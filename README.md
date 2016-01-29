@@ -1,6 +1,6 @@
 # IGAIR-ISS-GITHUB
 <a href="#">
-  <img src="https://img.shields.io/badge/Version-0.0.1%20Alpha-blue.svg?style=flat-square" alt="ISS Version">
+  <img src="https://img.shields.io/badge/Version-0.0.16%20Alpha-blue.svg?style=flat-square" alt="ISS Version">
 </a>
 <a href="https://github.com/CodyBurton/igair-iss/blob/master/LICENSE">
   <img src="https://img.shields.io/badge/License-GPLv3-gold.svg?style=flat-square" alt="Licensing">
