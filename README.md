@@ -12,6 +12,6 @@
 ISS stands for Intergalactic Staffing Solutions and denotes Intergalactic Airlines' in-development system which manages and organises internal operations across all departments and branches.
 
 ###Credits
-Jonathan Fort - Project Manager<br>
+Jonathan Fort (EagleScoped) - Project Manager<br>
 Cody Burton - Lead Programmer<br>
 Conner - Graphics Artist
