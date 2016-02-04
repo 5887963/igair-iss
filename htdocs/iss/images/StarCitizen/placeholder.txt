@@ -1,3 +1,0 @@
-DO NOT REMOVE
-
-This file exists to preserve this directory in the event that it is empty.
