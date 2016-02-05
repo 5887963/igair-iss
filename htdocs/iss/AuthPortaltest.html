@@ -1,27 +1,71 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+﻿<!-- Landing Page -->
+<html lang="en">
+<head>
+	<!-- Init Core Details -->
 	<meta charset="UTF-8">
-	<title>mobiStyle</title>
-	<link href="./mobiStyle_files/css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="./mobiStyle_files/grid.css">
-	<link rel="stylesheet" href="./mobiStyle_files/mobi.css">
-
+	<title>ISS Auth Portal</title>
+	<!-- Init CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500|Electrolize' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="mobiStyle-master/css/grid.css" />
+	<link rel="stylesheet" href="mobiStyle-master/css/mobi.css" />
 </head>
 <body>
-	<img id="mg-imgBG" src="./mobiStyle_files/Avenger-blur.png">
+	<!-- Background Images -->
+	<img id="mg-imgBG" src="mobiStyle-master/img/IGAIR-starliner.png" />
 	<div id="mg-scanlineBG"></div>
-	<img id="mg-gridBG" src="./mobiStyle_files/new-dot.png" alt="">
+	<img id="mg-gridBG" src="mobiStyle-master/img/new-dot.png" alt="" />
 	<div id="mg-dotBG"></div>
-<div id="mgModal" class="mg-modal">
-	<h3 class="mg-modal-title">Modal Window</h3>
-	<div class="mg-modal-content">
-		<p>This is some information you need to know.</p>
-		<div class="container">
-			<button id="closeModal" class="mg-simple right" data-mg-close-modal="">OK</button>
+	<!-- Modal Message -->
+	<div id="authModal" class="mg-modal" style="margin-top: -81.5px;">
+	<div id="modalContent" class="mg-modal-content">
+		<div id="loginView">
+			<div class="container" align="right">
+				<button class="mg-svg-button mg-action" style="width: 172px;" id="goCreateAcc">Register Account!</button>
+			</div>
+		<h3 class="mg-modal-title">Please enter your credentials</h3>
+			<div id="loginFields">
+				<label for="username_field" class="mg-inline">
+					<span class="mg-label">Please enter your Username</span>
+					<input type="text" id="username_field">
+				<label for="password_field" class="mg-inline">
+					<span class="mg-label">Please enter your Password</span>
+					<input type="password" id="password_field">
+			</div>
+			<div class="container">
+				<button class="mg-svg-button mg-action" style="width: 172px;" id="goLogin">Login!</button>
+			</div>
+		<p>Please contact an administrator if you need to reset your password</p>
+		</div>
+		<div id="registerView" hidden>
+			<div class="container" align="right">
+				<a href="" id="toLogin">Go back!</a>
+			</div>
+		<h3 class="mg-modal-title">Please enter your desired credentials</h3>
+			<div id="registerFields">
+				<label for="reg_username_field" class="mg-inline">
+					<span class="mg-label">Please enter your desired Username</span>
+					<input type="text" id="username_field">
+				<label for="reg_password_field" class="mg-inline">
+					<span class="mg-label">Please enter your desired Password</span>
+					<input type="password" id="reg_password_field">
+				<label for="reg_password_cfield" class="mg-inline">
+					<span class="mg-label">Please confirm your password is correct</span>
+					<input type="password" id="reg_password_cfield">
+				<label for="reg_email_field" class="mg-inline">
+					<span class="mg-label">Please enter your recovery email</span>
+					<input type="text" id="reg_email_field">
+				<label for="reg_email_cfield" class="mg-inline">
+					<span class="mg-label">Please confirm your email is correct</span>
+					<input type="text" id="reg_email_cfield">
+			</div>
+			<div class="container">
+				<button class="mg-svg-button mg-action" style="width: 172px;" id="goRegister">Register!</button>
+			</div>
 		</div>
 	</div>
-</div>
-		<section id="mg-wrapper">
+	</div>
+	<!-- Start of Content -->
+	<div id="mg-wrapper">
 		<div class="container">
 			<div class="mainContent">
 				<div class="mg-panel">
@@ -74,26 +118,15 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<div class="mg-toast" id="mgToast">
-		<div class="mg-toast-content">
-			<h3>Title</h3>
-			<p>Message</p>
-		</div>
-		
-
 	</div>
-	
-	<div id="mg-modalOverlay"></div>
-	<script src="./mobiStyle_files/jquery.min.js"></script>
-	<script src="./mobiStyle_files/snap.svg-min.js"></script>
-	<script src="./mobiStyle_files/jquery.mobiStyle-min.js"></script>
+	<!-- Init Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="Snap/dist/snap.svg-min.js"></script>
+	<script src="mobiStyle-master/scripts/min/jquery.mobiStyle-min.js"></script>
+	<script src="snap/dist/snap.svg-min.js"></script>
 	<script>
 		$(document).mobiStyle();
-		$('#openToast').click(function(){
-			$('#mgToast').mobiStyle('messages', 'openToast');
-		});
 	</script>
-	
-
-</body></html>
+</body>
+</html>
+<!-- End of Document -->
