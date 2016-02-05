@@ -1,10 +1,11 @@
 <?php
 //grab DB
-require "psl-config.php";
+include_once 'db_connect.php';
+include_once 'functions.php';
 //check session, show proper html
-if (session_status() == PHP_SESSION_ACTIVE) {
+if (login_check($mysqli) == true) {
 	include('Hub.html');
 } else {
-	include('AuthPortal.html');
+	header('Location: login.php');
 }
 ?>

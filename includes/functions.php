@@ -20,8 +20,7 @@ function sec_session_start() {
         $httponly);
     // Sets the session name to the one set above.
     session_name($session_name);
-    session_start();            // Start the PHP session 
-    session_regenerate_id(true);    // regenerated the session, delete the old one. 
+    session_start();            // Start the PHP session
 }
 
 function login($email, $password, $mysqli) {
@@ -187,3 +186,4 @@ function esc_url($url) {
         return $url;
     }
 }
+
