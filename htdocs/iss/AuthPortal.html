@@ -15,57 +15,60 @@
 	<div id="mg-scanlineBG"></div>
 	<img id="mg-gridBG" src="mobiStyle-master/img/new-dot.png" alt="" />
 	<div id="mg-dotBG"></div>
-	<!-- Modal Message -->
-	<div id="authModal" class="mg-modal" style="margin-top: -81.5px;">
-	<div id="modalContent" class="mg-modal-content">
-		<div id="loginView">
-		<h3 class="mg-modal-title">Please enter your credentials</h3>
-			<div class="container" align="right">
-				<button class="mg-svg-button mg-action" style="width: 172px;" id="goCreateAcc">Register Account!</button>
-			</div>
-			<div id="loginFields">
-				<label for="username_field" class="mg-inline">
-					<span class="mg-label">Please enter your Username</span>
-					<input type="text" id="username_field">
-				<label for="password_field" class="mg-inline">
-					<span class="mg-label">Please enter your Password</span>
-					<input type="password" id="password_field">
-			</div>
-			<div class="container">
-				<button class="mg-svg-button mg-action" style="width: 172px;" id="goLogin">Login!</button>
-			</div>
-		<p>Please contact an administrator if you need to reset your password</p>
-		</div>
-		<div id="registerView" hidden>
-		<h3 class="mg-modal-title">Please enter your desired credentials</h3>
-			<div class="container" align="right">
-				<a href="" id="toLogin">Go back!</a>
-			</div>
-			<div id="registerFields">
-				<label for="reg_username_field" class="mg-inline">
-					<span class="mg-label">Please enter your desired Username</span>
-					<input type="text" id="username_field">
-				<label for="reg_password_field" class="mg-inline">
-					<span class="mg-label">Please enter your desired Password</span>
-					<input type="password" id="reg_password_field">
-				<label for="reg_password_cfield" class="mg-inline">
-					<span class="mg-label">Please confirm your password is correct</span>
-					<input type="password" id="reg_password_cfield">
-				<label for="reg_email_field" class="mg-inline">
-					<span class="mg-label">Please enter your recovery email</span>
-					<input type="text" id="reg_email_field">
-				<label for="reg_email_cfield" class="mg-inline">
-					<span class="mg-label">Please confirm your email is correct</span>
-					<input type="text" id="reg_email_cfield">
+	<!-- Modal Message: Login-->
+	<div id="loginModal" class="mg-modal" style="margin-top: -81.5px;">
+		<div id="modalContent" class="mg-modal-content">
+			<div id="loginView">
+			<h3 class="mg-modal-title">Please enter your credentials</h3>
+				<div id="loginFields">
+					<label for="username_field" class="mg-inline">
+						<span class="mg-label">Please enter your Username</span>
+						<input type="text" id="username_field">
+					<label for="password_field" class="mg-inline">
+						<span class="mg-label">Please enter your Password</span>
+						<input type="password" id="password_field">
+				</div>
+				<div class="container">
+					<button class="mg-svg-button mg-action" style="width: 172px;" id="goLogin">Login!</button>
+				</div>
+			<p>Please contact an administrator if you need to reset your password</p>
 			</div>
 			<div class="container">
-				<button class="mg-svg-button mg-action" style="width: 172px;" id="goRegister">Register!</button>
+			<button id="closeModal" class="mg-simple right" data-mg-close-modal="">Cancel</button>
 			</div>
-		</div>
-		<div class="container" align=>
-		<button id="closeModal" class="mg-simple right" data-mg-close-modal="">Cancel</button>
 		</div>
 	</div>
+	<!-- Modal Message: Register -->
+	<div id="registerModal" class="mg-modal" style = "margin-top: -81.5px;">
+		<div id="modalContent" class="mg-modal-content">
+			<div id="registerView">
+				<h3 class="mg-modal-title">Please enter your desired credentials</h3>
+				<div id="registerFields">
+					<label for="reg_username_field" class="mg-inline">
+						<span class="mg-label">Please enter your desired Username</span>
+						<input type="text" id="username_field">
+					<label for="reg_password_field" class="mg-inline">
+						<span class="mg-label">Please enter your desired Password</span>
+						<input type="password" id="reg_password_field">
+					<label for="reg_password_cfield" class="mg-inline">
+						<span class="mg-label">Please confirm your password is correct</span>
+						<input type="password" id="reg_password_cfield">
+					<label for="reg_email_field" class="mg-inline">
+						<span class="mg-label">Please enter your recovery email</span>
+						<input type="text" id="reg_email_field">
+					<label for="reg_email_cfield" class="mg-inline">
+						<span class="mg-label">Please confirm your email is correct</span>
+						<input type="text" id="reg_email_cfield">
+				</div>
+				<div class="container">
+					<button class="mg-svg-button mg-action" style="width: 172px;" id="goRegister">Register!</button>
+				</div>
+				<p>Please ensure your password is stored securely - your password will need to be reset manually if you lose it!</p>
+			</div>
+			<div class="container">
+				<button id="closeModal" class="mg-simple right" data-mg-close-modal="">Cancel</button>
+			</div>
+		</div>
 	</div>
 	<!-- Start of Content -->
 	<div id="mg-wrapper">
@@ -85,8 +88,8 @@
 						<h1>Intergalactic Staffing Solutions</h1>
 					</div>
 					<h2>Authentication Portal</h2>
-				<p>Welcome to the IGAIR Intergalactic Staffing Solutions Authentication Portal!
-				Please click the <b>Authenticate!</b> button below to login!
+					<p>Welcome to the IGAIR Intergalactic Staffing Solutions Authentication Portal!
+					Please click the <b>Authenticate!</b> button below to login!
 					<!-- Error Message Display: Bad Login -->
 					<div class="mg-message small error" id="err_badLogin" hidden>
 						<h3>Login Failed!</h3>
@@ -94,7 +97,10 @@
 					</div>
 					<div class="container">
 						<div class="third">
-							<button class="mg-svg-button mg-action" style="width: 172px;" id="goAuthenticate" data-mg-modal="authModal">Authenticate!</button>
+							<button class="mg-svg-button mg-action" style="width: 172px;" id="goAuthenticate" data-mg-modal="loginModal">Sign in!</button>
+						</div>
+						<div class="third">
+							<button class="mg-svg-button mg-action" style="width: 172px;" id="goAuthenticate" data-mg-modal="registerModal">Register!</button>
 						</div>
 					</div>
 					<div class="container" id="backToHQ">
